@@ -47,8 +47,8 @@ defaultOpts       = {
   showPrevButton:  false,
   showNextButton:  true,
   bubbleWidth:     280,
-  bubblePadding:   15,
-  arrowWidth:      20,
+  bubblePadding:   10,
+  arrowWidth:      12,
   skipIfNoElement: true,
   isRtl:           false,
   cookieName:      'hopscotch.tour.state'
@@ -1839,7 +1839,7 @@ Hopscotch = function(initOptions) {
     // loadTour if we are calling startTour directly. (When we call startTour
     // from window onLoad handler, we'll use currTour)
     if (!currTour) {
-      
+
       // Sanity check! Is there a tour?
       if(!tour){
         throw new Error('Tour data is required for startTour.');
